@@ -2,6 +2,7 @@ import requests
 import json
 import googlemaps
   
+# load scraped data to process for locations
 print('Loading Data...')
 with open('data.json') as json_file:
 	data = json.load(json_file)
@@ -16,6 +17,8 @@ raw_place_data = {
 	'current_cities': {},
 	'hometowns': {}
 }
+
+# use google geocode API to get latitude and longitude coordinates for all locations
 api_key = input('Enter Your API Key: ')
 url = 'https://maps.googleapis.com/maps/api/geocode/json?'
 gmaps = googlemaps.Client(key = api_key)
@@ -32,6 +35,7 @@ for key in coordinates:
 				raw_place_data[key][place] = res[0]
 				print(raw_place_data[key][place])
   
+# save coordinates and raw data to files
 print('Saving Data...')
 with open('coordinate_data.json', 'w') as outfile:
 		json.dump(coordinates, outfile)
