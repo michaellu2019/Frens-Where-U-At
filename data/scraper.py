@@ -10,8 +10,6 @@ import json
 import getpass
 
 # get user credentials
-# username = 'SibeliusTheMessenger@gmail.com'
-# password = 'GNSConfessions'
 username = input('Enter your Facebook Username: ')
 password = getpass.getpass('Enter your Facebook Password: ')
 
