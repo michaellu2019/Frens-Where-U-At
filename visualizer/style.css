@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+body {
+	background-color: #fff;
+	color: #000;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-family: 'Raleway', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+	"Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+	sans-serif;
+}
+
+.wrapper {
+	background-color: #fff;
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+section.main {
+	text-align: center;
+	width: 100%;
+	min-height: 100%;
+}
+
+#map {
+	border: none;
+	width: 90%;
+	height: 80vh;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	background-color: #00B0FF;
+	color: #E1F5FE;
+	font-weight: bold;
+	display: inline-block;
+	margin: 1rem;
+	padding: 1rem;
+	-webkit-transition: 0.25s ease-out;
+	-ms-transition: 0.25s ease-out;
+	-moz-transition: 0.25s ease-out;
+	-o-transition: 0.25s ease-out;
+	transition: 0.25s ease-out;
+}
+
+.button:hover {
+	background-color: #80D8FF;
+	color: #FFFFFF;
+}

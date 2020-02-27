@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale=1">
+		<link href = "style.css" rel = "stylesheet">
+
+		<title>Frens Where U At</title>
+	</head>
+
+	<body>
+		<div class = "wrapper">
+			<header class = "primary"></header>
+			<main class = "primary">
+				<section class = "main">
+					<header>
+						<h1>Frens Where U At</h1>
+					</header>
+
+					<div class = "content">
+						<iframe id = "map" src = "https://www.google.com/maps/d/u/1/embed?mid=1NxuALcuwknlwEZbOyaHd9rC-UA6XeMY7"></iframe>
+						<p>These are all the past and present schools (blue) and hometowns/current residences (red) of all my Facebook friends. This data was web scraped from each Facebook profile using Selenium and Beautiful Soup.</p>
+						<a class = "button" href = '../formatted_data/formatted_coordinate_data.json' target = "_blank">VIEW JSON</a>
+					</div>
+				</section>
+			</main>
+		</div>
+
+		<script type = "text/javascript" src = "script.js"></script>
+	</body>
+</html>
